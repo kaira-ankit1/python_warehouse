@@ -1,0 +1,33 @@
+How to create Virtual Env:
+1. Go to the directory where you want ot create your project (in cmd).
+2. run: pip install virtualenv
+3. create a vitual env
+	virtualenv vitualenv_name
+	e.g.: virtualenv ankit
+4. Activate the virtual env
+	ankit\scripts\activate
+5. We are inside virtual env(you will see (ankit) at the beginning)
+6. run command: python
+7. check whether any module is present: import pandas
+8. You will get an error.
+9. run command exit() to come out of python
+10. install packages e.g. : pip install python
+11. How to create the list of packages installed in our virtuall env
+	pip freeze > requirements.txt
+	
+12. VirtuL ENV TO HAVE ALL GLOBAL PACKAGES:
+	virtualenv --system-site-packages vitualenv_name
+	virtualenv --system-site-packages ankit2
+	
+13. How to delete virtualenv
+a. deactivate the package
+b. del vitualenv_name
+c. A (yes to All)
+
+14 How to recreate virtualenv with the help of requirements.txt
+a. create a vitual env
+	virtualenv vitualenv_name
+	e.g.: virtualenv ankit
+b. activate ankit
+	ankit\scripts\activate
+c. pip install -r .\requirements.txt
